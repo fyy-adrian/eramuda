@@ -160,8 +160,8 @@ function App() {
 
     return (
         <div className="w-full overflow-hidden max-w-[1820px] mx-auto">
-            <div className="bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_50%,rgba(255,255,255,1)_100%),url('./pattern.png')]
-          ,url('./pattern.png')]
+            <div className="bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_50%,rgba(255,255,255,1)_100%),url('/pattern.png')]
+          ,url('/pattern.png')]
           bg-cover bg-center" id="beranda">
                 <Reveal className="" keyframes={fadeUp} duration={1000} triggerOnce>
                     <div className="
@@ -319,8 +319,8 @@ function App() {
                         </RowSection>
                     </Reveal>
                 </div>
-                <div className="relative px-7 md:px-28  bg-[linear-gradient(to_top,rgba(255,255,255,0)_50%,rgba(255,255,255,1)_100%),url('./pattern.png')]
-          ,url('./pattern.png')]
+                <div className="relative px-7 md:px-28  bg-[linear-gradient(to_top,rgba(255,255,255,0)_50%,rgba(255,255,255,1)_100%),url('/pattern.png')]
+          ,url('/pattern.png')]
           bg-cover bg-center pb-[110px]">
                     <img src="./blur3.png" className="absolute right-0 -top-44 z-[1]" alt="" />
                     <Reveal keyframes={FadeRight} duration={1000} triggerOnce>
@@ -367,7 +367,7 @@ function App() {
 
                 </div>
             </section>
-            <section className="px-7 md:px-28 flex flex-col gap-10 relative bg-cover bg-[url('./pattern_squares.png')]" id="program-kami">
+            <section className="px-7 md:px-28 flex flex-col gap-10 relative bg-cover bg-[url('/pattern_squares.png')]" id="program-kami">
                 <div className="flex flex-col gap-1 pt-10 items-center justify-center">
                     <h1 className="text-[28px] font-semibold md:leading-[67px] md:tracking-[-0.44px] text-white text-center">
                         Kalau kamu ngerasa begini, kamu nggak sendirian.
@@ -453,8 +453,8 @@ function App() {
                 </section>
             </section>
             <section className="lg:min-h-[110vh] lg:px-28 flex flex-col gap-10 relative justify-center items-center" id="kontak">
-                <div className="w-full flex flex-col gap-5 relative bg-[#6A67C9] lg:rounded-xl py-[82px] items-center px-7 md:px-0 bg-[url('./pattern.png')]
-          ,url('./pattern.png')]
+                <div className="w-full flex flex-col gap-5 relative bg-[#6A67C9] lg:rounded-xl py-[82px] items-center px-7 md:px-0 bg-[url('/pattern.png')]
+          ,url('/pattern.png')]
           bg-cover bg-center">
                     <h1 className="h-auto text-[28px] md:text-[44px] font-semibold md:leading-[67px] md:tracking-[-0.44px] text-white text-center">
                         Ada Pertanyaan? <br /> Jangan Ragu untuk Bertanya!
