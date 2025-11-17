@@ -381,12 +381,12 @@ function App() {
 
                         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
                             <div className="flex flex-col gap-4 items-center bg-[linear-gradient(160deg,var(--Primary-blue-lighter,#B5B2F0)_-2.39%,#F9F9F9_69.98%)] transition-all duration-300 shadow-md bg-opacity-10 backdrop-blur-2xl hover:bg-opacity-100 px-5 py-5 rounded-lg">
-                                <img src="./book.png" alt="" className="w-44" />
+                                <img src="./buku2.png" alt="" className="w-[200px]" />
                                 <h3 className=" font-semibold text-black">
                                     Keterampilan yang Lengkap dan Relevan
                                 </h3>
                                 <p className="text-sm text-black/70 text-justify">
-                                    Kamu belajar berbagai skill penting untuk era disrupsi. Mulai dari coding, desain, digital marketing, hingga leadership.
+                                    Disini kamu belajar berbagai skill penting untuk era disrupsi. Mulai dari coding, desain, digital marketing, hingga leadership.
                                 </p>
                             </div>
                             <div className="flex flex-col gap-4 items-center bg-[linear-gradient(160deg,var(--Primary-blue-lighter,#B5B2F0)_-2.39%,#F9F9F9_69.98%)] transition-all duration-300 shadow-md bg-opacity-10 backdrop-blur-2xl hover:bg-opacity-100 px-5 py-5 rounded-lg">
