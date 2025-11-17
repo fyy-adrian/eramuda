@@ -211,7 +211,7 @@ function App() {
                                     </p>
                                 </div>
                             </div>
-                            <h1 className="text-3xl md:text-5xl lg:text-[64px] md:leading-[66px] lg:leading-[88px] lg:tracking-[-0.64px] font-[500] max-w-[650px] text-center mt-4 lg:mt-0">
+                            <h1 className="text-3xl md:text-5xl md:leading-[66px] lg:leading-[88px] lg:tracking-[-0.64px] font-[500] max-w-[650px] text-center mt-4 lg:mt-0">
                                 Empowering Youth in the Era of Disruption
                             </h1>
                         </div>
