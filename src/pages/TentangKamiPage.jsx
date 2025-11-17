@@ -193,8 +193,8 @@ function App() {
 
   return (
     <div className="w-full overflow-hidden max-w-[1520px] max-auto">
-      <div className="bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_50%,rgba(255,255,255,1)_100%),url('./pattern.png')]
-          ,url('./pattern.png')]
+      <div className="bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_50%,rgba(255,255,255,1)_100%),url('/pattern.png')]
+          ,url('/pattern.png')]
           bg-cover bg-center">
                 <section className="lg:min-h-screen flex flex-col gap-24 my-1 relative mb-[110px] mt-[80px] lg:mt-[150px] " id="tentang-kami">
                     <div className="relative px-7 md:px-28">
