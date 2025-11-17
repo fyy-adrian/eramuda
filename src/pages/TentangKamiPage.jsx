@@ -192,7 +192,7 @@ function App() {
   // `;
 
   return (
-    <div className="w-full overflow-hidden max-w-[1820px] max-auto">
+    <div className="w-full overflow-hidden max-w-[1520px] max-auto">
       <div className="bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_50%,rgba(255,255,255,1)_100%),url('./pattern.png')]
           ,url('./pattern.png')]
           bg-cover bg-center">

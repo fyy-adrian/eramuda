@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative w-full max-w-[1520px] mx-auto">
 
       {/* BACKGROUND WRAPPER */}
       <div className="flex justify-between absolute top-0 w-full overflow-hidden">

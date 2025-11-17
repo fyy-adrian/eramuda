@@ -3,6 +3,7 @@ import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import Navbar from "./../components/Navbar";
 import { ArrowRight, CircleArrowLeft, CircleArrowRight, LucidePhoneCall } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function App() {
     const texts = [
@@ -15,6 +16,7 @@ function App() {
     const [subIndex, setSubIndex] = useState(0); // panjang substring saat ini
     const [deleting, setDeleting] = useState(false); // sedang hapus atau tulis
     const [blink, setBlink] = useState(true); // kedipan cursor
+    const url = `https://wa.me/6285664636443`;
 
     const containerRef2 = useRef(null);
 
@@ -159,7 +161,7 @@ function App() {
 
 
     return (
-        <div className="w-full overflow-hidden max-w-[1820px] mx-auto">
+        <div className="w-full overflow-hidden max-w-[1520px] mx-auto">
             <div className="bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_50%,rgba(255,255,255,1)_100%),url('/pattern.png')]
           ,url('/pattern.png')]
           bg-cover bg-center" id="beranda">
@@ -261,12 +263,6 @@ function App() {
                     </Reveal>
                 </div>
                 <div className="relative px-7 md:px-28">
-                    <img src="./blur4.png" className="absolute left-0 -top-32 z-[1]" alt="" />
-                    <img
-                        src="./blur5.png"
-                        className="absolute right-1/2 translate-x-1/4 -top-32 z-[1]"
-                        alt=""
-                    />
                     <Reveal keyframes={FadeLeft} duration={1000} triggerOnce>
 
                         <RowSection
@@ -416,11 +412,7 @@ function App() {
 
                 </div>
                 <section className="flex flex-col gap-3 relative">
-                    <img
-                        src="./blur5.png"
-                        className="absolute right-1/2 translate-x-1/4 -bottom-32 z-[1]"
-                        alt=""
-                    />
+
                     <h1 className="text-[28px] md:text-[34px] font-semibold md:tracking-[-0.44px] text-white text-center mt-20">
                         Ayo Daftar Sekarang!
                     </h1>
@@ -439,11 +431,6 @@ function App() {
                                 ref={containerRef2}
                                 className="flex flex-row gap-10 lg:py-14 overflow-x-scroll snap-x snap-mandatory hide-scroll"
                             >
-                                <img
-                                    src="./blur5.png"
-                                    className="absolute left-1/2 translate-x-1/4 -top-16 z-[1]"
-                                    alt=""
-                                />
                                 {cards2.map((card, index) => (
                                     <ProgramUnggulanCard key={index} {...card} />
                                 ))}
@@ -462,13 +449,15 @@ function App() {
                     <p className="text-white text-sm md:text-base lg:text-sm leading-5 max-w-[550px] text-center">
                         Penasaran atau bingung bingung memilih keterampilan apa? Jangan ragu untuk bertanya sami siap Membantu Anda! Tim kami siap menjawab semua pertanyaan Anda dengan cepat
                     </p>
-                    <button className="capitalize rounded-full text-white py-2 px-2 lg:px-6 bg-[#221D80] flex items-center gap-2 hover:bg-[#1a1560] transition-colors">
+                    <Link to={url}
+                        target="_blank"
+                        rel="noopener noreferrer" className="capitalize rounded-full text-white py-2 px-2 lg:px-6 bg-[#221D80] flex items-center gap-2 hover:bg-[#1a1560] transition-colors cursor-pointer active:scale-95 ease-in-out duration-200">
                         <LucidePhoneCall className="w-5 h-5" />
 
                         <p className="">
                             Hubungi Kami
                         </p>
-                    </button>
+                    </Link>
                 </div>
             </section>
             <footer className="px-7 md:px-28 w-full flex flex-col gap-5 relative bg-[#6A67C9] text-sm text-white py-4">
@@ -491,12 +480,15 @@ const ProgramUnggulanCard = ({ title, desc, img }) => {
                 <p className="text-sm text-white text-justify">
                     {desc}
                 </p>
-                <button className="capitalize rounded-full text-white py-[5px] px-4 bg-[#221D80] flex items-center gap-2 w-fit">
+                <Link
+                    to={"https://chat.whatsapp.com/Hs1HsV4mKabDLhshCkE9xf"}
+                    target="_blank"
+                    rel="noopener noreferrer" className="capitalize rounded-full text-white py-[5px] px-4 bg-[#221D80] flex items-center gap-2 w-fit hover:bg-[#1a1560] transition-colors cursor-pointer active:scale-95 ease-in-out duration-200">
                     <p className="whitespace-nowrap text-sm lg:text-base">
                         Daftar Sekarang
                     </p>
                     <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5" />
-                </button>
+                </Link>
             </div>
             <img src={img} className="w-[359px] h-[240px] z-10 hidden lg:flex rounded-md shadow-md" />
         </div>
