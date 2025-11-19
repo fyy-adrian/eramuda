@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [lastClickedSection, setLastClickedSection] = useState(null);
+  const navigate = useNavigate();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -91,8 +92,8 @@ export default function Navbar() {
     const currentPath = window.location.pathname;
 
     if (isExternal) {
-      window.location.href = '/tentang-kami';
-      return;
+      navigate('/tentang-kami');
+      return null; // hentikan rendering komponen
     }
 
     if (currentPath === '/tentang-kami') {

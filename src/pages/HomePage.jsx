@@ -447,7 +447,7 @@ function App() {
                         Ada Pertanyaan? <br /> Jangan Ragu untuk Bertanya!
                     </h1>
                     <p className="text-white text-sm md:text-base lg:text-sm leading-5 max-w-[550px] text-center">
-                        Penasaran atau bingung bingung memilih keterampilan apa? Jangan ragu untuk bertanya sami siap Membantu Anda! Tim kami siap menjawab semua pertanyaan Anda dengan cepat
+                        Penasaran atau bingung bingung memilih keterampilan apa? Jangan ragu untuk bertanya kami siap Membantu Anda! Tim kami siap menjawab semua pertanyaan Anda dengan cepat
                     </p>
                     <Link to={url}
                         target="_blank"
